@@ -41,6 +41,8 @@ public class RegistraClienteController {
 	public List<Categoria> cargaCategoria() {
 		return categoriaService.listarTodos();
 	}
+	
+	
 
 	@PostMapping("/registraCliente")
 	@ResponseBody
