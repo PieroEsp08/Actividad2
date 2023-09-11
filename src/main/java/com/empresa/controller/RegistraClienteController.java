@@ -41,10 +41,9 @@ public class RegistraClienteController {
 	public List<Categoria> cargaCategoria() {
 		return categoriaService.listarTodos();
 	}
+	 
+	@PostMapping("/registraCliente") 
 	
-	
-
-	@PostMapping("/registraCliente")
 	@ResponseBody
 	public Map<?, ?> registra(Cliente obj) {
 		HashMap<String, String> map = new HashMap<String, String>();
